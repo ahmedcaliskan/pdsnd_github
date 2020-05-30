@@ -56,7 +56,7 @@ def get_filters():
             day = str(input('Your input is not in expected days. Please enter the day (all for all days):')).lower()
 
 
-    print('-'*40)
+    print('_'*40)
     return city, month, day
 
 
@@ -111,7 +111,7 @@ def time_stats(df):
     print('Most popular hour:' , popular_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*40)
 
 
 def station_stats(df):
@@ -134,7 +134,7 @@ def station_stats(df):
     print('Most popular station combination:' , popular_station_combination)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*40)
 
 
 def trip_duration_stats(df):
@@ -152,7 +152,7 @@ def trip_duration_stats(df):
     print('Mean travel time:' , mean_travel_time)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*40)
 
 
 def user_stats(df):
@@ -175,7 +175,7 @@ def user_stats(df):
         print('Most common year of birth:' , df['Birth Year'].mode()[0])
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*40)
 
 
 def main():
