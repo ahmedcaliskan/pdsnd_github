@@ -188,6 +188,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
+		#Display 5 rows of raw information to user 
         raw_data = input('\n Would you like to see individual trip data?\n')
         row_no = 0
         while raw_data.lower() == 'yes':
